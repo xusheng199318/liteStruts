@@ -10,21 +10,21 @@ public class Struts {
 	public static View runAction(String actionName, Map<String, String> parameters) {
 		/*
         
-		0. 读取配置文件struts.xml
+		0. 露脕脠隆脜盲脰脙脦脛录镁struts.xml
  		
- 		1. 根据actionName找到相对应的class ， 例如LoginAction,   通过反射实例化（创建对象）
-		据parameters中的数据，调用对象的setter方法， 例如parameters中的数据是 
+ 		1. 赂霉戮脻actionName脮脪碌陆脧脿露脭脫娄碌脛class 拢卢 脌媒脠莽LoginAction,   脥篓鹿媒路麓脡盲脢碌脌媒禄炉拢篓麓麓陆篓露脭脧贸拢漏
+		戮脻parameters脰脨碌脛脢媒戮脻拢卢碌梅脫脙露脭脧贸碌脛setter路陆路篓拢卢 脌媒脠莽parameters脰脨碌脛脢媒戮脻脢脟 
 		("name"="test" ,  "password"="1234") ,     	
-		那就应该调用 setName和setPassword方法
+		脛脟戮脥脫娄赂脙碌梅脫脙 setName潞脥setPassword路陆路篓
 		
-		2. 通过反射调用对象的exectue 方法， 并获得返回值，例如"success"
+		2. 脥篓鹿媒路麓脡盲碌梅脫脙露脭脧贸碌脛exectue 路陆路篓拢卢 虏垄禄帽碌脙路碌禄脴脰碌拢卢脌媒脠莽"success"
 		
-		3. 通过反射找到对象的所有getter方法（例如 getMessage）,  
-		通过反射来调用， 把值和属性形成一个HashMap , 例如 {"message":  "登录成功"} ,  
-		放到View对象的parameters
+		3. 脥篓鹿媒路麓脡盲脮脪碌陆露脭脧贸碌脛脣霉脫脨getter路陆路篓拢篓脌媒脠莽 getMessage拢漏,  
+		脥篓鹿媒路麓脡盲脌麓碌梅脫脙拢卢 掳脩脰碌潞脥脢么脨脭脨脦鲁脡脪禄赂枚HashMap , 脌媒脠莽 {"message":  "碌脟脗录鲁脡鹿娄"} ,  
+		路脜碌陆View露脭脧贸碌脛parameters
 		
-		4. 根据struts.xml中的 <result> 配置,以及execute的返回值，  确定哪一个jsp，  
-		放到View对象的jsp字段中。
+		4. 赂霉戮脻struts.xml脰脨碌脛 <result> 脜盲脰脙,脪脭录掳execute碌脛路碌禄脴脰碌拢卢  脠路露篓脛脛脪禄赂枚jsp拢卢  
+		路脜碌陆View露脭脧贸碌脛jsp脳脰露脦脰脨隆拢
         
         */
     	

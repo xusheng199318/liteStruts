@@ -29,7 +29,7 @@ public class StrutsTest {
 		String actionName = "login";
 		Map<String,String> params = new HashMap<String,String>();
         params.put("name","test");
-        params.put("password","123456"); //ÃÜÂëºÍÔ¤ÉèµÄ²»Ò»ÖÂ
+        params.put("password","123456"); //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½Ä²ï¿½Ò»ï¿½ï¿½
         
         View view  = Struts.runAction(actionName,params);        
         

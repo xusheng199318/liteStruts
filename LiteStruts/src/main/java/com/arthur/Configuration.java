@@ -18,6 +18,7 @@ public class Configuration {
 	public Configuration (String fileName) {
 		String packageName = this.getClass().getPackage().getName();
 		packageName = packageName.replace(".", "/");
+		System.out.println("包名："+packageName);
 		InputStream is = this.getClass().getResourceAsStream("/" + packageName + "/" + fileName);
 		parseXML(is);
 		
